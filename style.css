@@ -1,1 +1,12 @@
+body{
+  background: white;
+}
+.links {
+  padding-right: 80px;
+}
+.img{
+  position: sticky;
+  padding-left:150px;
+}
+
 
