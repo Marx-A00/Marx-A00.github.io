@@ -10,76 +10,69 @@ body{
   vertical-align: middle;
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fexternal-preview.redd.it%2FZPJ4-PZnGWd03Ha4VMLxsgLr1Z4fstjLKmmHkCPliIY.jpg%3Fauto%3Dwebp%26s%3D5e8774007897352c79c483933db5b701ee51a41f&f=1&nofb=1&ipt=6be4269751bd994e4c0a64e716a364f6a399398edb168b7c4071b1e9dd4bd20a&ipo=images);
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
-  padding-top: 45px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   margin-bottom: 0;
   margin: auto;
   padding-left: 450px;
   font-family: helvetica;
   font-size: 30px;
-
 }
-.header{
-  text-decoration-line: underline;
-  text-align: center;
-}
-h1{
-  font-size: 25px;
-  text-align: center;
-}
-h2{
-  text-decoration-line: underline;
-  text-align: center;
-}
-h3{
-  text-decoration-line: underline;
-  text-align: center;
-  line-height: 35px;
-  height: 10px;
-}
-h4{
-  text-align:left;
-  height: 85px;
-  
-}
-h5{
-  text-align:center;
-  height: 20px;
-  
-}
-h6{
-  text-align:left;
-  height: 60px;
-  
-}
-ul{
-  text-align: left;
-  
-}
-p1{
-  color: gray;
-  font-size: 15px;
-}
-.header__info{
-  font-style: italic;
-}
-.text{
+.cell{
   text-align: left;
   border-style: ridge;
   width:50%;
   padding:10px;
   background: white;
-  
+  padding-top:0px;
+  margin-bottom: 10px;
+}
+
+h1{
+  text-decoration-line: underline;
+  text-align: center;
+  margin-top: 0px;
+}
+
+h1:hover,h2:hover,li:hover{
+  opacity: 0.5;
+  box-shadow: 0px 0px 0px rgba(0,0,0, 0.12);
+}
+
+h2{
+  text-decoration-line: underline;
+  font-weight:lighter;
+  font-style:italic;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p{
+  text-align: center;
+  font-style:italic;
+  color:gray;
+  font-size:20px;
+  font-family: courier;
+}
+
+p1{
+  color:gray;
+  font-size: 15px;
+  line-height:0px;
+  margin-top: 20px;
+}
+
+p3{
+  text-align:left;
+}
+
+ul{
+  margin-bottom: 200px;
 }
 li:not(:first-of-type){
   margin-top:1.5em;
   line-height: 120%;
-}
-.exp-header{
-  text-decoration-line: underline;
-  margin-bottom: 0px;
-}
-.exp-header:hover{
-  opacity: 0.5;
-  box-shadow: 0px 0px 0px rgba(0,0,0, 0.12);
-}
+
+
