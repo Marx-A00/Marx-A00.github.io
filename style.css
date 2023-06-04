@@ -1,100 +1,80 @@
-html,body{
-  height:100%;
-}
-html{
-  display:table;
-  margin:auto;
-}
-body{
-  display: table-cell;
-  vertical-align: middle;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fexternal-preview.redd.it%2FZPJ4-PZnGWd03Ha4VMLxsgLr1Z4fstjLKmmHkCPliIY.jpg%3Fauto%3Dwebp%26s%3D5e8774007897352c79c483933db5b701ee51a41f&f=1&nofb=1&ipt=6be4269751bd994e4c0a64e716a364f6a399398edb168b7c4071b1e9dd4bd20a&ipo=images);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  margin-bottom: 0;
-  padding-left: 455px;
-  font-family: helvetica;
-  font-size: 30px;
-}
-.cell{
-  text-align: left;
-  border-style: ridge;
-  width:50%;
-  padding:10px;
-  background: white;
-  padding-top:0px;
-  margin-bottom: 10px;
-}
-
-h1{
-  text-decoration-line: underline;
-  text-align: center;
-  margin-top: 0%;
-}
-
-h1:hover,h2:hover,li:hover{
-  opacity: 0.5;
-  box-shadow: 0px 0px 0px rgba(0,0,0, 0.12);
-}
-
-h2{
-  text-decoration-line: underline;
-  font-weight:lighter;
-  font-style:italic;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-p.section__name{
-  color: black;
-  font-size: 9px;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PRIME Final Resume</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="cell">
+    <div class="section__name">
+    <h1 class="section__name">Marcos Andrade</h1>
+    <p class="section__name">(651)-500-6761 | mnandrade1999@gmail.com</p>
+    <p>Prime HTML Resume</p>
+    </div>  
+  </div>
   
-}
-p.ending__notes{
-  text-align:left;
-}
-
-p{
-  text-align: center;
-  font-style:italic;
-  color:gray;
-  font-size:20px;
-  font-family: courier;
-}
-
-p1{
-  color:gray;
-  font-size: 15px;
-  line-height:0px;
-  margin-top: 20px;
-}
-
-p3{
-  text-align:left;
-}
-p4{
-  text-align:center;
-  font-size: 9px;
-  color: black;
-}
-
-ul{
-  background-color: #ffe4e1;
-  border-style: groove;
-  margin-bottom: 160px;
-  margin-top: 20px;
-}
-li:not(:first-of-type){
-  margin-top:1.1em;
-  line-height: 120%;
-}
-h1.section__name{
-  margin-bottom: 0%;
-}
-
+  <div class="cell">
+      <h1>About Me</h1>
+      <p>Highly creative, logical, self motivated and inquisitive person. I love a good challenge!</p>
+  </div>
+  
+  <div class="cell">
+    <h1>Professional Experience</h1>
+    <h2>Ramp Lead</h2>
+    <p1>Sun Country Airlines | 2021-Current</p1>
+    
+    <div>
+    <p3> Achievements:</p3>
+    </div>  
+    
+    <ul>
+      <li> Ability to lead a team, but still do the hard work to lead by example </li>
+      <li> ability to oversee a job from start to finish in efficient time </li>
+      <li> problem-solving when things are less than ideal</li>
+    </ul>
+    
+    <h2>Commerical Product Salesman</h2>
+    <p1>Gertens Greenhouse | 2020-2021</p1>
+    <div>
+    <p3> Achievements:</p3>
+    </div>  
+    
+    <ul>
+      <li> ability to effectively communicate with customers to know which products would suit them.</li>
+      <li> ability to keep things cordial when coworkers did not agree.  </li>
+      <li> my efficiency in knowing exactly where each plant was and what it looked like without having to search for it.</li>
+  </div>
+  
+  <div class="cell">
+    <h1>Education</h1>
+    
+    <ul>
+      <li>Simley High-School </li>
+      <p1>2017</p1>
+      <li>University of Minnesota</li>
+      <p1>2020-2022</p1>
+    </ul>
+  </div>  
+    
+    
+    <div class="cell">
+      <h1> Other Relevant Skills</h1>
+      
+      <ul>
+        <li> intermediate with Java and Python </li>
+        <li> skilled in Adobe Premiere, Adobe Illustrator, and Photoshop </li>
+      </ul>
+      <p3> Valuable Lessons learned:</p3>
+      <p class="ending__notes"> Learning other applications such as Adobe Premiere and Illustrator has taught me to problem solve on my own, especially when things are difficult and unclear.
+      Additionally, it has taught me the value in sticking with an idea from start to finish, having an unrelenting drive to see an idea to its completion.</p>
+    </div>
+    <div class="cell">
+      <p3>Ending Notes:</p3>
+      <p class="ending__notes"> Thank you for taking the time to read my resume. I spent a great deal of time and effort making sure that 
+        it was completed correctly, and also was satisfactory to my artistic vision, which is vitally important to me. I have never touched HTML or CSS before, so I hope the
+        quality of my resume will demonstrate the exact fire that I will bring to Prime. Thank you for your time.
  
-
-
-
+</body>
+</html>
