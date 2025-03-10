@@ -2,22 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Andrade | Full Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Personal Portfolio</h1>
-  <p>This is a personal portfolio website that showcases my work and projects.</p>
-  <h2>Projects</h2>
-  <ul>
-    <li>Project 1</li>
-    <li>Project 2</li>
-    <li>Project 3</li>
-  </ul>
-  <h2>About Me</h2>
-  <p>I am a software engineer with a passion for building web and mobile applications.</p>
-  <h2>Contact</h2>
-  <p>You can contact me at <a href="mailto:example@example.com">example@example.com</a>.</p>
+  <main class="container">
+    <div class="header">
+      <h1>Marcos Andrade dot dev</h1>
+    </div>
+
+    <div class="grid-half">
+      <div class="about-section">
+        <div class="section">
+          <h2>about me</h2>
+          <p>full stack engineer based in Minneapolis, MN</p>
+        </div>
+
+        <div class="divider" data-hover></div>
+
+        <div class="section">
+          <h2>contact me</h2>
+          <p>marcos.andrade.dev@gmail.com</p>
+          <p>find me on 
+            <a href="https://github.com/Marx-A00" target="_blank" rel="noopener noreferrer" class="highlight-yellow">github</a> and 
+            <a href="https://www.linkedin.com/in/maa-dev/" target="_blank" rel="noopener noreferrer" class="highlight-blue">linkedin</a>
+          </p>
+        </div>
+
+        <div class="divider" data-hover></div>
+
+        <div class="section">
+          <h2>programming</h2>
+          <p>i'm best at <span class="highlight-yellow">javascript</span>/<span class="highlight-blue">typescript</span>, <span class="highlight-orange">python</span>, and <span class="highlight-purple">elisp</span></p>
+          <p>but i'm learning <span class="highlight-red">rust</span></p>
+        </div>
+      </div>
+      
+      <div class="cube-container" id="cube-container">
+        <!-- The 3D cube will be rendered here with JavaScript -->
+      </div>
+    </div>
+
+    <div class="divider" data-hover></div>
+
+    <div class="section">
+      <h2>tech stack</h2>
+      <div class="tech-stack">
+        <p>frontend: <span class="highlight-blue">react</span>, <span class="highlight-blue">nextjs</span>, <span class="highlight-yellow">vanilla js</span>, <span class="highlight-blue">tailwind css</span>, html, css</p>
+        <p>backend: <span class="highlight-green">node</span>, <span class="highlight-green">express</span>, <span class="highlight-blue">django</span>, <span class="highlight-blue">flask</span>, <span class="highlight-blue">fastapi</span></p>
+        <p>platforms: <span class="highlight-blue">vercel</span>, <span class="highlight-purple">heroku</span>, <span class="highlight-orange">aws</span></p>
+        <p>database: <span class="highlight-blue">postgresql</span> on <span class="highlight-green">supabase</span></p>
+      </div>
+    </div>
+
+    <div class="divider" data-hover></div>
+
+    <div class="section">
+      <h2>about this site</h2>
+      <p>this site is built with <span class="highlight-yellow">html</span>, <span class="highlight-blue">css</span>, and <span class="highlight-yellow">javascript</span></p>
+    </div>
+
+    <div class="divider" data-hover></div>
+
+    <div class="section">
+      <h2>projects</h2>
+      <ul class="project-list">
+        <li class="project-card" data-hover>
+          <div class="project-card-inner">
+            <div class="project-title">Rec</div>
+            <div class="project-languages">JavaScript, React, Node.js</div>
+            <div class="project-description">A recommendation engine for music and movies based on user preferences.</div>
+          </div>
+        </li>
+        <li class="project-card" data-hover>
+          <div class="project-card-inner">
+            <div class="project-title">.dotfiles</div>
+            <div class="project-languages">Shell, Emacs Lisp</div>
+            <div class="project-description">A collection of configuration files for my development environment.</div>
+          </div>
+        </li>
+        <li class="project-card" data-hover>
+          <div class="project-card-inner">
+            <div class="project-title">Open Pair</div>
+            <div class="project-languages">TypeScript, WebRTC</div>
+            <div class="project-description">A collaborative coding platform for pair programming sessions.</div>
+          </div>
+        </li>
+        <li class="project-card" data-hover>
+          <div class="project-card-inner">
+            <div class="project-title">fretboardJs</div>
+            <div class="project-languages">JavaScript, Canvas API</div>
+            <div class="project-description">A library for visualizing guitar fretboard diagrams and music theory.</div>
+          </div>
+        </li>
+        <li class="project-card" data-hover>
+          <div class="project-card-inner">
+            <div class="project-title">Typing Practice</div>
+            <div class="project-languages">TypeScript, React</div>
+            <div class="project-description">A web application for improving typing speed and accuracy with programming syntax.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    // Hover effect for gradient elements
+    document.addEventListener('mousemove', (e) => {
+      const hoverElements = document.querySelectorAll('[data-hover]');
+      
+      hoverElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        element.style.setProperty('--mouse-x', `${x}px`);
+        element.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+
+    // Simple 3D cube implementation
+    const cubeContainer = document.getElementById('cube-container');
+    
+    if (cubeContainer) {
+      // Create a cube using CSS 3D transforms
+      const cube = document.createElement('div');
+      cube.className = 'cube';
+      cube.style.width = '150px';
+      cube.style.height = '150px';
+      cube.style.position = 'relative';
+      cube.style.transformStyle = 'preserve-3d';
+      cube.style.transform = 'rotateX(-20deg) rotateY(-20deg)';
+      cube.style.transition = 'transform 0.1s ease';
+      
+      // Create cube faces
+      const colors = ['#60A5FA', '#FBBF24', '#F87171', '#34D399', '#A78BFA', '#F97316'];
+      const positions = [
+        'rotateY(0deg) translateZ(75px)',    // front
+        'rotateY(180deg) translateZ(75px)',  // back
+        'rotateY(90deg) translateZ(75px)',   // right
+        'rotateY(-90deg) translateZ(75px)',  // left
+        'rotateX(90deg) translateZ(75px)',   // top
+        'rotateX(-90deg) translateZ(75px)'   // bottom
+      ];
+      
+      for (let i = 0; i < 6; i++) {
+        const face = document.createElement('div');
+        face.style.position = 'absolute';
+        face.style.width = '100%';
+        face.style.height = '100%';
+        face.style.backgroundColor = colors[i];
+        face.style.opacity = '0.8';
+        face.style.transform = positions[i];
+        face.style.border = '1px solid rgba(255,255,255,0.3)';
+        cube.appendChild(face);
+      }
+      
+      cubeContainer.appendChild(cube);
+      
+      // Rotate cube on mouse move
+      document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        
+        const rotateY = (x / windowWidth - 0.5) * 90;
+        const rotateX = (y / windowHeight - 0.5) * 90;
+        
+        cube.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+    }
+  </script>
 </body>
 </html>
