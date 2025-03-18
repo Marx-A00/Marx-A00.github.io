@@ -14,6 +14,18 @@ body {
   margin: 0 auto;
 }
 
+/* Navigation and link styling */
+.blog-link {
+  color: #A78BFA;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;

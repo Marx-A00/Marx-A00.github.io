@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="en-us">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <title>404 Page not found - Marcos Andrade | Blog</title>
+  <meta name="description" content="Marcos Andrade&#39;s personal website and blog">
   
-  <!-- Fonts -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Styles -->
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 <body>
   <main class="container">
     <header class="header">
       <nav class="nav">
         <div class="logo">
-          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+          <a href="https://marx-a00.github.io/blog/">Marcos Andrade | Blog</a>
         </div>
         <div class="logo-switches">
           <a href="/" class="portfolio-link" title="Back to Portfolio">Portfolio</a>
         </div>
         <ul id="menu">
-          {{ range .Site.Menus.main }}
+          
           <li>
-            <a href="{{ .URL }}">
-              <span>{{ .Name }}</span>
+            <a href="/blog/posts/">
+              <span>Posts</span>
             </a>
           </li>
-          {{ end }}
+          
+          <li>
+            <a href="/blog/categories/">
+              <span>Categories</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/">
+              <span>Tags</span>
+            </a>
+          </li>
+          
         </ul>
       </nav>
     </header>
 
     <div class="content">
-      {{ block "main" . }}{{ end }}
+      
+<div class="not-found">404</div>
     </div>
 
     <footer>
       <div class="divider"></div>
-      <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}</p>
+      <p>&copy; 2025 Marcos Andrade</p>
     </footer>
   </main>
   
-  <script src="{{ "js/main.js" | relURL }}"></script>
+  <script src="/blog/js/main.js"></script>
 </body>
 </html> 

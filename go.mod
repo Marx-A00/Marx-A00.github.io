@@ -1,4 +1,4 @@
-module mrx-blog
+module github.com/Marx-A00/Marx-A00.github.io
 
 go 1.22.4
 

@@ -10,7 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
-  {{ $style := resources.Get "css/style.css" }}
-  {{ $style = $style | resources.Minify }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ if (fileExists "assets/css/style.css") }}
+    {{ $style := resources.Get "css/style.css" }}
+    {{ if $style }}
+      {{ $style = $style | resources.Minify }}
+      <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ else }}
+      <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    {{ end }}
+  {{ else }}
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ end }}
 </head> 

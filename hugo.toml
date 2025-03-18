@@ -1,6 +1,7 @@
-baseURL = 'https://marx-a00.github.io/'
+baseURL = 'https://marx-a00.github.io/blog/'
 languageCode = 'en-us'
-title = 'Marcos Andrade | Full Stack Engineer'
+title = 'Marcos Andrade | Blog'
+publishDir = 'blog'
 
 # Enable safe HTML rendering
 [markup.goldmark.renderer]
@@ -21,4 +22,24 @@ buildExpired = false
   env = "production"
   description = "Marcos Andrade's personal website and blog"
   author = "Marcos Andrade"
-  # You can add more theme-specific parameters here
+  # Site customization
+  customCSS = ["css/style.css"]
+  customJS = ["js/main.js"]
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
