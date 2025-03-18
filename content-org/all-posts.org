@@ -1,0 +1,45 @@
+#+hugo_base_dir: ../
+
+* My first post                                       :tag1:@category1:
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:EXPORT_HUGO_SECTION: posts
+:END:
+
+This is my post body.
+
+* A more complete post                                      :hugo:emacs:
+:PROPERTIES:
+:EXPORT_FILE_NAME: complete-post
+:EXPORT_DATE: 2023-06-01
+:EXPORT_HUGO_SECTION: posts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :description "My first post with ox-hugo" :featured_image "/images/featured.jpg"
+:END:
+
+Welcome to my *first* complete post using /ox-hugo/!
+
+** Introduction
+This is a subheading that will be converted to an H2 in Hugo.
+
+#+begin_src python
+def hello_world():
+    print("Hello from ox-hugo!")
+#+end_src
+
+** Conclusion
+Org mode is powerful for writing blog posts!
+
+* Welcome to my World
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-world
+:EXPORT_HUGO_SECTION: posts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :description "My first post with ox-hugo" :featured_image "/images/featured.jpg"
+:END:
+
+Thanks for checking out my little slice of the internet. If you're seeing this it either means:
+
+1. I just made this, so it's close to March 17th 2025
+2. I never updated this, in that case R.I.P 
+3. You scrolled all the way back to my first post o_0
+
+Either way, I anticipate posts on here being sporadic and random, revolving around any number of topics, but probably related to art, tech, or Emacs. Stay tuned and feel free to reach out!

@@ -183,6 +183,32 @@ a:hover {
     grid-template-columns: 3fr 2fr;
     gap: 2rem;
   }
+  
+  .cube-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+  }
+}
+
+.cube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .grid-half {
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+  }
+  
+  .cube-container {
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
 }
  
 

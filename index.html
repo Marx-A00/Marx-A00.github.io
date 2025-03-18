@@ -132,22 +132,23 @@
       // Create a cube using CSS 3D transforms
       const cube = document.createElement('div');
       cube.className = 'cube';
-      cube.style.width = '150px';
-      cube.style.height = '150px';
+      cube.style.width = '180px';
+      cube.style.height = '180px';
       cube.style.position = 'relative';
       cube.style.transformStyle = 'preserve-3d';
       cube.style.transform = 'rotateX(-20deg) rotateY(-20deg)';
       cube.style.transition = 'transform 0.1s ease';
+      cube.style.margin = '0 auto';
       
       // Create cube faces
       const colors = ['#60A5FA', '#FBBF24', '#F87171', '#34D399', '#A78BFA', '#F97316'];
       const positions = [
-        'rotateY(0deg) translateZ(75px)',    // front
-        'rotateY(180deg) translateZ(75px)',  // back
-        'rotateY(90deg) translateZ(75px)',   // right
-        'rotateY(-90deg) translateZ(75px)',  // left
-        'rotateX(90deg) translateZ(75px)',   // top
-        'rotateX(-90deg) translateZ(75px)'   // bottom
+        'rotateY(0deg) translateZ(90px)',
+        'rotateY(180deg) translateZ(90px)',
+        'rotateY(90deg) translateZ(90px)',
+        'rotateY(-90deg) translateZ(90px)',
+        'rotateX(90deg) translateZ(90px)',
+        'rotateX(-90deg) translateZ(90px)'
       ];
       
       for (let i = 0; i < 6; i++) {
