@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   position: relative;
   display: inline-block;
   white-space: nowrap;
@@ -27,6 +27,12 @@ h1 {
     cursor-blink 0.4s step-end infinite;
   width: 26ch;
   border-right-color: transparent;
+}
+
+.name-note {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0 0 1rem 0;
 }
 
 @keyframes typing {
